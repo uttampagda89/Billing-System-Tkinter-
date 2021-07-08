@@ -284,7 +284,7 @@ def main():
             self.cell(95, 5, "                " + str(add_line2.get()), align='L', border=1)
             self.ln(5)
 
-            self.cell(100, 5, 'GST : 24ABBFS0185J1Z8', align='L', border=1)
+            self.cell(100, 5, 'Enter Shop GST', align='L', border=1)
             self.cell(95, 5, "Buyer's GST : " + str(cus_gst_no.get()), align='L', border=1)
             self.ln(5)
             self.ln(5)
@@ -376,7 +376,7 @@ def main():
 
             pdf.output(
                 "Bill/" + str(
-                    customer_name.get() + "_" + invoice_no.get()) + ".pdf")  # C:\Users\Public\Desktop\Bill             /Users/uttampagda/Desktop/Invoice/
+                    customer_name.get() + "_" + invoice_no.get()) + ".pdf")  
         else:
             pass
 
@@ -403,7 +403,7 @@ def main():
     print_frame.place(x=0, y=650, height=80, width=1300)
 
     # ==================================== labels ==============================
-    shop_name_lebel = Label(shop_frame, text="Shree Raj Marble", font=("arial", 23))
+    shop_name_lebel = Label(shop_frame, text="Shop Name", font=("arial", 23))
     shop_name_lebel.place(x=550, y=-5)
 
     cus_name_lebel = Label(cus_detail_frame, text="Customer name:", font=("courier", 17))
@@ -517,11 +517,5 @@ def main():
 # Set Interval
 splash_root.after(3000, main)
 
-# Execute tkinter
 
-
-# ========================================Backend================================
-
-
-# =========================================== End===================================
 mainloop()
