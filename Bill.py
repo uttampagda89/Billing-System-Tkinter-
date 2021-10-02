@@ -240,7 +240,7 @@ def main():
         if not tree.selection():
             result = tkMessageBox.showwarning('', 'Please Select Something First!', icon="warning")
         else:
-            result = tkMessageBox.askquestion('', 'Are you sure you want to delete this item?', icon="warning")
+            result = tkMessageBox.askquestion('', 'Are you sure you want to delete this product?', icon="warning")
             if result == 'yes':
                 curItem = tree.focus()
                 contents = (tree.item(curItem))
@@ -305,14 +305,14 @@ def main():
             self.ln(5)
 
             self.cell(140, 5, '', align='L', border=0)
-            self.cell(55, 5, "IGST"+ " ("+ str(float(tex_enter.get())/2)+"%)      :"+ str(float(getTotal.total_tex)/2), align='L', border=1)
+            self.cell(55, 5, "IST"+ " ("+ str(float(tex_enter.get())/2)+"%)      :"+ str(float(getTotal.total_tex)/2), align='L', border=1)
             self.ln(5)
 
             self.cell(140, 5, '', align='L', border=0)
-            self.cell(55, 5, "CGST"+" ("+str(float(tex_enter.get())/2)+"%)      :" + str(float(getTotal.total_tex)/2), align='L', border=1)
+            self.cell(55, 5, "CST"+" ("+str(float(tex_enter.get())/2)+"%)      :" + str(float(getTotal.total_tex)/2), align='L', border=1)
             self.ln(5)
             self.set_font('Arial', 'IB', 7)
-            self.cell(140, 5, 'Grand Total(In words) : ' + str(getTotal.out1), align='L', border=1)
+            self.cell(140, 5, 'Grand Total(words) : ' + str(getTotal.out1), align='L', border=1)
             self.set_font('Arial', '', 12)
             self.cell(55, 5, 'Grand Total(Rs.): ' + str(getTotal.gross_total), align='L', border=1)
 
