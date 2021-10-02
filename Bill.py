@@ -18,8 +18,8 @@ except:
     pass
 
 splash_root = Tk()
-spalsh_h = 480
-spalsh_w = 600
+spalsh_h = 490
+spalsh_w = 610
 splash_screen_w = splash_root.winfo_screenwidth()
 splash_screen_h = splash_root.winfo_screenheight()
 s_x = (splash_screen_w / 2) - (spalsh_w / 2)
@@ -43,7 +43,7 @@ def main():
 
     # Adjust size
 
-    root.title("Integer-i Billing Solutions")
+    root.title("Integer-i bill Solutions")
     root_h = 730
     root_w = 1300
     root_screen_w = root.winfo_screenwidth()
@@ -111,7 +111,7 @@ def main():
         tex_label = Label(get_total_frame, text="Total tex:", font=("courier", 15))
         tex_label.place(x=350, y=15)
         tex_label_num = Label(get_total_frame, text=getTotal.total_tex, font=("courier", 15))
-        tex_label_num.place(x=480, y=15, width=250)
+        tex_label_num.place(x=480, y=12, width=250)
 
         getTotal.gross_total = round(getTotal.total_tex + total)
         gross_total_label = Label(get_total_frame, text="Grand total:", font=("courier", 15))
