@@ -29,7 +29,7 @@ splash_root.title("Integer-i Billing Solutions")
 # Set Label
 canvas = Canvas(splash_root, width=600, height=480)
 canvas.pack()
-img = PhotoImage(file="integer.png")
+img = PhotoImage(file="inter.png")
 canvas.create_image(300, 250, anchor=CENTER, image=img)
 
 
@@ -258,7 +258,7 @@ def main():
 
     class PDF(FPDF):
         def header(self):
-            self.set_font('Arial', '', 8)
+            self.set_font('calibery', '', 8)
             self.cell(195, 5, '(Original / Duplicate)', border=0, align='R')
             self.ln(5)
             self.set_font('Arial', 'B', 15)
@@ -314,7 +314,7 @@ def main():
             self.set_font('Arial', 'IB', 7)
             self.cell(140, 5, 'Grand Total(words) : ' + str(getTotal.out1), align='L', border=1)
             self.set_font('Arial', '', 12)
-            self.cell(55, 5, 'Grand Total(Rs.): ' + str(getTotal.gross_total), align='L', border=1)
+            self.cell(55, 5, 'Grnd Total(Rs.): ' + str(getTotal.gross_total), align='L', border=1)
 
             self.set_y(-60)
             # Arial italic 8
@@ -345,7 +345,7 @@ def main():
             # Title
             self.cell(20, 6, 'Sr No', 0, 0, 'C', 1)
             self.cell(50, 6, 'Product Name', 0, 0, 'C', 1)
-            self.cell(22, 6, 'HSN Code', 0, 0, 'C', 1)
+            self.cell(22, 6, 'HSN', 0, 0, 'C', 1)
             self.cell(30, 6, 'Quantity', 0, 0, 'C', 1)
             self.cell(30, 6, 'Rate', 0, 0, 'C', 1)
             self.cell(43, 6, 'Total', 0, 0, 'C', 1)
