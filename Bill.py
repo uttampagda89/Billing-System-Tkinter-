@@ -439,7 +439,7 @@ def main():
     state_code_lebel = Label(cus_exdetail_frame, text="State_code", font=("courier", 17))
     state_code_lebel.place(x=5, y=65)
     state_code_lebel_entry = Entry(cus_exdetail_frame, textvariable=state_code)
-    state_code_lebel_entry.place(x=250, y=68)
+    state_code_lebel_entry.place(x=25, y=68)
 
     enter_tex_lebel = Label(cus_exdetail_frame, text="Tex (%):", font=("courier", 17))
     enter_tex_lebel.place(x=5, y=95)
@@ -452,9 +452,9 @@ def main():
     pro_name_entry.place(x=200, y=8, width=100)
 
     hsn_lebel = Label(add_pro_frame, text="HSN code:", font=("courier", 17))
-    hsn_lebel.place(x=355, y=5)
+    hsn_lebel.place(x=35, y=5)
     hsn_entry = Entry(add_pro_frame, textvariable=hsn_code)
-    hsn_entry.place(x=500, y=8, width=80)
+    hsn_entry.place(x=50, y=8, width=80)
 
     qty_lebel = Label(add_pro_frame, text="Quentity:", font=("courier", 17))
     qty_lebel.place(x=650, y=5)
@@ -491,10 +491,10 @@ def main():
 
 
     style = ttk.Style()
-    style.configure("Treeview", rowheight=30, background="silver", font=('Calibri', 20))
+    style.configure("Treeview", rowheight=90, background="silver", font=('Calibri', 21))
     scrollbarx = Scrollbar(show_items_frame, orient=HORIZONTAL)
     scrollbary = Scrollbar(show_items_frame, orient=VERTICAL)
-    tree = ttk.Treeview(show_items_frame, columns=("Product Name", "HSN code", "Quantity", "Rate", "Total"), height=240,
+    tree = ttk.Treeview(show_items_frame, columns=("Product Name", "HSN", "Quantity", "Rate", "Total"), height=240,
                         selectmode="extended", yscrollcommand=scrollbary.set, xscrollcommand=scrollbarx.set)
     scrollbary.config(command=tree.yview)
     scrollbary.pack(side=RIGHT, fill=Y)
