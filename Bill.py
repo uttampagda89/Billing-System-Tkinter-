@@ -18,8 +18,8 @@ except:
     pass
 
 splash_root = Tk()
-spalsh_h = 490
-spalsh_w = 610
+spalsh_h = 491
+spalsh_w = 611
 splash_screen_w = splash_root.winfo_screenwidth()
 splash_screen_h = splash_root.winfo_screenheight()
 s_x = (splash_screen_w / 2) - (spalsh_w / 2)
@@ -30,7 +30,7 @@ splash_root.title("Integer-i Billing Solutions")
 canvas = Canvas(splash_root, width=600, height=480)
 canvas.pack()
 img = PhotoImage(file="inter.png")
-canvas.create_image(300, 250, anchor=CENTER, image=img)
+canvas.create_image(301, 251, anchor=CENTER, image=img)
 
 
 # main window function
