@@ -13,13 +13,13 @@ from fpdf import FPDF
 from tkinter import *
 
 try:
-    os.mkdir("Bill")
+    os.mkdir("Bill\")
 except:
     pass
 
 splash_root = Tk()
-spalsh_h = 491
-spalsh_w = 611
+spalsh_h = 492
+spalsh_w = 613
 splash_screen_w = splash_root.winfo_screenwidth()
 splash_screen_h = splash_root.winfo_screenheight()
 s_x = (splash_screen_w / 2) - (spalsh_w / 2)
@@ -52,7 +52,7 @@ def main():
     root_y = (root_screen_h / 2) - (root_h / 2)
     root.geometry(f'{root_w}x{root_h}+{int(root_x)}+{int(root_y)}')
 
-    root.resizable(0, 0)
+    root.resizable(0, 1)
     root.config(bg="#DEEAEF")
     # ========================================Variables==============================
 
