@@ -300,16 +300,16 @@ def main():
             # Position at 1.5 cm from bottom
             self.set_y(-80)
 
-            self.cell(140, 5, '', align='L', border=0)
+            self.cell(140, 5, '', align='R', border=0)
             self.cell(55, 5, 'Total(Rs.)          : ' + str(getTotal.total), align='L', border=1)
             self.ln(5)
 
-            self.cell(140, 5, '', align='L', border=0)
-            self.cell(55, 5, "IST"+ " ("+ str(float(tex_enter.get())/2)+"%)      :"+ str(float(getTotal.total_tex)/2), align='L', border=1)
+            self.cell(140, 5, '', align='R', border=0)
+            self.cell(55, 5, "IST"+ " ("+ str(float(tex_enter.get())/2)+"%):"+ str(float(getTotal.total_tex)/2), align='L', border=1)
             self.ln(5)
 
             self.cell(140, 5, '', align='L', border=0)
-            self.cell(55, 5, "CST"+" ("+str(float(tex_enter.get())/2)+"%)      :" + str(float(getTotal.total_tex)/2), align='L', border=1)
+            self.cell(55, 5, "CST"+" ("+str(float(tex_enter.get())/2)+"%):" + str(float(getTotal.total_tex)/2), align='L', border=1)
             self.ln(5)
             self.set_font('Arial', 'IB', 7)
             self.cell(140, 5, 'Grand Total(words) : ' + str(getTotal.out1), align='L', border=1)
@@ -320,7 +320,7 @@ def main():
             # Arial italic 8
             self.set_font('Arial', 'I', 10)
             # Page number
-            self.multi_cell(195, 4,
+            self.multi_cell(195, 3,
                             txt="Notes:-\n           1.We cannot accept responsibility for breakage,damage,theft or loss in transit \n             When the goods are handed over to the transport under clear receipt\n           2.In case of dispute, only Jamnagar Court will have jurdication.\n           3. The quality and quantity of the goods should be checked immediately of\n             receipt of material, otherwise no complaint will be entertained after one week \n \n                                                                                                                                                                 Shree Raj Marble\n  \n \n \n                                                                                                                                                            Authorised Signatory",
                             border=1, align="L")
 
