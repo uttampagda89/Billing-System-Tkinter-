@@ -131,15 +131,15 @@ def main():
             if (number == 0):
                 return " "
 
-            elif (number > 0 and number <= 9):
+            elif (number > 0 and number <= 8):
 
-                if (hundredvalue == 1):
+                if (hundredvalue == 9):
                     return units[number] + " Hundred "
 
                 elif (thousandvalue == 1):
                     return units[number] + " Thousand "
 
-                elif (lakhvalue == 1):
+                elif (lakhvalue == 3):
                     return units[number] + " Lakh "
 
                 else:
