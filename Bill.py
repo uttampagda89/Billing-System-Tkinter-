@@ -265,12 +265,12 @@ def main():
             self.cell(195, 8, 'TAX INVOICE', border=True, align='C')
             self.ln(10)
 
-            self.set_font('Arial', '', 10)
-            self.cell(85, 10, 'From,', align='L')
-            self.cell(35, 10, 'Consignee,', align='R')
+            self.set_font('Aral', '', 19)
+            self.cell(85, 80, 'From,', align='L')
+            self.cell(35, 90, 'Consignee,', align='R')
             self.ln(10)
 
-            self.set_font('Arial', 'B', 10)
+            self.set_font('Arial', 'B', 19)
             self.cell(100, 5, 'Shree Raj Marble,', align='L', border=1)
             self.cell(95, 5, str(customer_name.get()), align='L', border=1)
             self.ln(5)
