@@ -189,22 +189,22 @@ def main():
         elif (num >= 100 and num <= 999):
             out = converter(int(number_in_string11[0]), hundredvalue=1) + converter(int(number_in_string11[1::1]))
 
-        elif (num >= 1000 and num <= 9999):
+        elif (num >= 100 and num <= 9999):
             out = converter(int(number_in_string11[0]), thousandvalue=1) + converter(int(number_in_string11[1]),
                                                                                      hundredvalue=1) + converter(
                 int(number_in_string11[2::1]))
 
-        elif (num >= 10000 and num <= 99999):
+        elif (num >= 1000 and num <= 99999):
             out = converter(int(number_in_string11[0:2]), thousandvalue=1) + converter(int(number_in_string11[2]),
                                                                                        hundredvalue=1) + converter(
                 int(number_in_string11[3::1]))
 
-        elif (num >= 100000 and num <= 999999):
+        elif (num >= 100000 and num <= 99999):
             out = converter(int(number_in_string11[0]), lakhvalue=1) + converter(int(number_in_string11[1:3]),
                                                                                  thousandvalue=1) + converter(
                 int(number_in_string11[3]), hundredvalue=1) + converter(int(number_in_string11[4::1]))
 
-        elif (num >= 1000000 and num <= 9999999):
+        elif (num >= 1000000 and num <= 999999):
             out = converter(int(number_in_string11[0:2]), lakhvalue=1) + converter(int(number_in_string11[2:4]),
                                                                                    thousandvalue=1) + converter(
                 int(number_in_string11[4]), hundredvalue=1) + converter(int(number_in_string11[5:]))
