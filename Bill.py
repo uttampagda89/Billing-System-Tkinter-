@@ -86,8 +86,8 @@ def main():
 
         for data in (Products_array):
             tree.insert('', 'end', values=(data))
-        product_name.set("")
-        product_qty.set("")
+        product_name.set(" jbjk")
+        product_qty.set("hgjk")
         product_rate.set("")
         hsn_code.set("")
         pro_name_entry.focus_set()
