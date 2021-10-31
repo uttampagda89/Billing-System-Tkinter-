@@ -5,7 +5,7 @@ import tkinter.ttk as ttk
 import tkinter.messagebox as tkMessageBox
 from PIL import ImageTk, Image
 
-# ======================================  Main Frame==================================
+# =================== Main Frame==============
 
 from fpdf import FPDF
 
@@ -44,8 +44,8 @@ def main():
     # Adjust size
 
     root.title("Integer-i bill Solutions")
-    root_h = 730
-    root_w = 1300
+    root_h = 731
+    root_w = 1301
     root_screen_w = root.winfo_screenwidth()
     root_screen_h = root.winfo_screenheight()
     root_x = (root_screen_w / 2) - (root_w / 2)
